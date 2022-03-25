@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a[href] {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('../img/city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-w {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.88);
+    height: 100vh !important;
+
+
+}
+
+.bg-b {
+    background: rgba(0, 0, 0, 0.60);
+    height: 100vh !important;
+}
+
+.navbar {
+    max-width: 80%;
+    margin: auto;
+}
+
+.navbar a:hover {
+    color: #3590d5!important;
+}
+
+.acerca-de {
+    max-width: 75%;
+    margin: auto;
+    margin-top: 125px !important;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 35px;
+
+}
+
+.acerca-de p {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    margin: auto;
+}
+
+.btn-w {
+    background: #fff;
+    border-radius: 40px;
+    width: 200px;
+    font-size: 50px;
+    text-align: center;
+    padding: 11px;
+    margin-top: 25px;
+}
+
+.btn-w a {
+    color: #000 !important;
+    display: block;
+    font-weight: 600;
+}
+
+.redes .icon-w {
+    background: red;
+    /*   margin-top: 100px;
+    align-self: flex-end;   
+    text-align: justify;
+    align-items: center; */
+
+}
+
+.fa-facebook-f {
+    color: #1877f2 !important;
+    padding-right: 0;
+    justify-content: center;
+    border-right: 15px;
+    padding: 15px;
+    font-size: 30px !important;
+    display: inline-block;
+
+}
+
+.fa-whatsapp {
+    color: #25d366 !important;
+    padding: 10px;
+    font-size: 30px !important;
+}
+
+.fa-github {
+    color: #333 !important;
+    font-size: 30px !important;
+
+}
+
+.fa-linkedin-in {
+    color: #0077b5 !important;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    background: rgba(255, 255, 255, 0.88) !important;
+    color: rgb(111, 126, 26) !important;
+}
+
+.navbar-nav>a {
+    color: #fff !important;
+}
+
+.fa-arrow-right {
+    color: #000 !important;
+    ;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+
+}
+
+footer p {
+    text-align: center;
+    font-weight: 600;
+}
+
+/*media query*/
+@media screen and (max-width: 575px) {
+    .bg-w {
+        height: 100px !important;
+        flex-direction: row;
+    }
+
+    .bg-w img {
+        height: 45% !important;
+    }
+
+    .bg-b {
+        width: 100%;
+    }
+
+    .bg-b nav {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .bg-b nav a {
+        color: #000;
+        text-align: center;
+    }
+
+    .acerca-de {
+        margin-top: 50px !important;
+
+
+
+    }
+
+    .redes .icon-w {
+        align-self: center;
+
+    }
+
+    .acerca-de, .btn-w {
+        width: 90%;
+        margin: auto;
+    }
+
+}
